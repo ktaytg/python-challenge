@@ -46,7 +46,6 @@ with open(csvpath, newline="") as csv_file:
   
       
         # create print out file
-        
 
 with open("C:/Users/katea/Columbia/Starter_Code/PyPoll/Resources/output.txt", "w") as printoutfile: 
               
@@ -60,7 +59,10 @@ with open("C:/Users/katea/Columbia/Starter_Code/PyPoll/Resources/output.txt", "w
                percentage = (votes / total_votes) * 100
                printoutfile.write(f"{candidate}: {percentage:.2f}% ({votes})\n")
                printoutfile.write("---------------------------\n")
-              
-               winner = max(vote_count, key=vote_count.get)
-               printoutfile.write(f"Winner: {winner}\n")
-               printoutfile.write("---------------------------\n")
+            
+           
+           winner = max(vote_count, key=vote_count.get)
+           printoutfile.write(f"Winner: {winner}\n")
+           printoutfile.write("---------------------------\n")
+      
+               
